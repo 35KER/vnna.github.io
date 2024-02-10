@@ -1,0 +1,394 @@
+<html>
+
+<head>
+  <title>VnNa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #ffccbf;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pic1 {
+      width: 200px;
+    }
+
+    .pic2 {
+      width: 70px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .yes {
+      background-color: #568564;
+      color: #ffffff;
+      padding: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      position: relative
+    }
+
+    .no {
+      background-color: #f72464;
+      padding: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+      border-radius: 5px;
+      position: relative
+    }
+
+    .yes:hover {
+      background-color: #ffffff;
+      color: #47201b;
+      cursor: pointer;
+    }
+
+    .no:hover {
+      background-color: #47201b;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    video {
+      height: 200px;
+      width: auto;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+
+    /* Styles for the button */
+    .button {
+      background-color: #568564;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Popup window styles */
+    .popup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FFF3A7;
+      border: 1px solid black;
+      border-radius: 15px;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    /* Close button styles */
+    .close {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      background-color: #fe7779;
+      color: black;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .close:disabled {
+      background-color: #ffffff;
+      cursor: not-allowed
+    }
+    .close:hover{
+      background-color: #568564;
+    }
+    /* Video styles */
+    p {
+      font-family: comic sans ms;
+      text-align: center;
+      justify-content: center;
+    }
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .yes, .no {
+    margin: 5px auto;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <h1>Anyeong Nanaw</h1>
+  <img />
+  <center>
+    <img class="pic1" src="we.png" alt="sorry" /><br />
+    <h3>Buka Buku Baru?</h3>
+    <img class="pic2" src="book.png" alt="buka" /><br />
+    <div class="btn">
+      <a id="yes" class="yes">Yes</a>
+      <a id="no" class="no">No</a><br />
+    </div><br>
+    <p id="tip">Klo dh jwb blh jk cht klo mo tpi chtlh bh...ndbae🤗</p>
+  </center>
+  
+  <div id="popup1" class="popup">
+    <center>
+      <video id="cat1" loop>
+        <source src="cat1.mp4" type="video/mp4" />
+      </video>
+      <audio id="m1" src="m1.MP3" muted loop></audio>
+      <p>bkn sd vnna2k19 blg tpi vnna2k24...cehhh</p>
+      <p>: klo [X] kelabu x blh tkn ohhh tunggu merah hihihihihi</p>
+      <button id='close1' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  
+  <div id="popup2" class="popup">
+    <center>
+    <video id="cat2" loop>
+      <source src="cat2.mp4" type="video/mp4" />
+    </video>
+    <audio id="m2" src="m2.MP3" loop></audio>
+      <p>btw sa bkn lupa birthday mu ohh...ad sa send kat stts tpi xtw klo ko nmpk...gitulh...mnatwlhkn...tpi sa wish lek lh berpun sebln sd...Happy Birthday Oiii, semoga berjaya d msa dpn n bahagia sellu 🥰
+      </p>
+      <button id='close2' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+
+  <div id="popup3" class="popup">
+    <center>
+    <video id="cat3" loop>
+      <source src="cat3.mp4" type="video/mp4" />
+    </video>
+    <audio id="m3" src="m3.MP3" loop></audio>
+      <p>maaflh...sa nk cht ko, oc bagai tpi besalh sa x berani...adalh takut gitu
+      </p>
+      <button id='close3' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  <div id="popup4" class="popup">
+    <center>
+    <video id="cat4" muted loop>
+      <source src="cat4.mp4" type="video/mp4" />
+    </video>
+    <audio id="m4" src="m4.MP3" loop></audio>
+      <p>sa x mo kaco ko jk...tpi smpe bila knn sa mo tipu diri sendiri 
+      </p>
+      <button id='close4' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  
+  <div id="popup5" class="popup">
+    <center>
+    <video id="cat5" muted loop>
+      <source src="cat5.mp4" type="video/mp4" />
+    </video>
+    <audio id="m5" src="m5.MP3" loop></audio>
+      <p>hati ni msi mo ko...ttp tunggu ko gitulh ges
+      </p>
+      <button id='close5' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  
+  <div id="popup6" class="popup">
+    <center>
+    <video id="cat6" muted loop>
+      <source src="cat6.mp4" type="video/mp4" />
+    </video>
+    <audio id="m6" src="m6.MP3" loop></audio>
+      <p>sa tw yg sa ni...x sweet, x pandai jaga ati ko, x aware gitu lgipun kita x byk saat bahagia bersma org blg
+      </p>
+      <button id='close6' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  
+  <div id="popup7" class="popup">
+    <center>
+    <video id="cat7" muted loop>
+      <source src="cat7.mp4" type="video/mp4" />
+    </video>
+    <audio id="m7" src="m7.MP3" loop></audio>
+      <p>tpi ni cara sa nk tunjukk...
+      </p>
+      <button id='close7' class="close" onclick="closePopup()" disabled>X</button>
+    </center>
+  </div>
+  
+  <script>
+    let click = 0;
+
+    const y = document.getElementById('yes');
+    const n = document.getElementById('no');
+    const btn = document.querySelector('.btn'); // Corrected reference
+    const cat1 = document.getElementById('cat1');
+    const cat2 = document.getElementById('cat2');
+    const cat3 = document.getElementById('cat3');
+    const cat4 = document.getElementById('cat4');
+    const cat5 = document.getElementById('cat5');
+    const cat6 = document.getElementById('cat6');
+    const cat7 = document.getElementById('cat7');
+    const m1 = document.getElementById('m1');
+    const m2 = document.getElementById('m2');
+    const m3 = document.getElementById('m3');
+    const m4 = document.getElementById('m4');
+    const m5 = document.getElementById('m5');
+    const m6 = document.getElementById('m6');
+    const m7 = document.getElementById('m7');
+    const p1 = document.getElementById('popup1');
+    const p2 = document.getElementById('popup2');
+    const p3 = document.getElementById('popup3');
+    const p4 = document.getElementById('popup4');
+    const p5 = document.getElementById('popup5');
+    const p6 = document.getElementById('popup6');
+    const p7 = document.getElementById('popup7');
+    const button1 = document.getElementById("close1");
+    const button2 = document.getElementById("close2");
+    const button3 = document.getElementById("close3");
+    const button4 = document.getElementById("close4");
+    const button5 = document.getElementById("close5");
+    const button6 = document.getElementById("close6");
+    const button7 = document.getElementById("close7");
+
+    const t = document.getElementById('tip');
+
+    y.addEventListener('click', function () {
+      window.location.href = "https://vt.tiktok.com/ZSFFgWddk/";
+    });
+    n.addEventListener('click', function () {
+      click++;
+
+      if (click === 1) {
+        setTimeout(function() {
+      button1.disabled = false;
+    }, 5000); 
+        m1.play();
+        p1.style.display = 'block';
+        y.style.fontSize = '40px';
+        btn.style.marginTop = '10px';
+        cat1.play();
+        n.innerText = 'mo lh 😣';
+        t.style.display = 'none';
+      } 
+      if (click === 2) {
+        setTimeout(function() {
+      button2.disabled = false;
+    }, 20000); 
+        p2.style.display = 'block';
+        m2.play();
+        y.style.fontSize = '50px';
+        btn.style.marginTop = '15px';
+        y.style.padding = '14px 28px';
+        cat2.play();
+        n.innerText = 'bersma kembali 🤗';
+      } else if (click === 3) {
+        setTimeout(function() {
+      button3.disabled = false;
+    }, 30000); 
+        p3.style.display = 'block';
+        m3.play();
+        cat3.play();
+        y.style.fontSize = '60px';
+        btn.style.marginTop = '20px';
+        y.style.padding = '18px 36px';
+        cat1.style.marginTop = '20px';
+        n.innerText = 'cm dlu ❤️';
+      } else if (click === 4) {
+        setTimeout(function() {
+      button4.disabled = false;
+    }, 25000); 
+        p4.style.display = 'block';
+        m4.play();
+        cat4.play();
+        y.style.fontSize = '70px';
+        btn.style.marginTop = '25px';
+        y.style.padding = '22px 44px';
+        cat1.style.marginTop = '25px';
+        n.innerText = 'ya blg 🥰';
+      } else if (click === 5) {
+        setTimeout(function() {
+      button5.disabled = false;
+    }, 20000); 
+        p5.style.display = 'block';
+        m5.play();
+        cat5.play();
+        y.style.fontSize = '80px';
+        btn.style.marginTop = '30px';
+        y.style.padding = '26px 52px';
+        cat1.style.marginTop = '30px';
+        n.innerText = ' bagi peluang 🥹';
+      } else if (click === 6) {
+        setTimeout(function() {
+      button6.disabled = false;
+    }, 20000); 
+        p6.style.display = 'block';
+        m6.play();
+        cat6.play();
+        y.style.fontSize = '90px';
+        btn.style.marginTop = '35px';
+        y.style.padding = '30px 60px';
+        cat1.style.marginTop = '35px';
+        n.innerText = 'tuk buktikan 🥺';
+      } else if (click === 7) {
+        setTimeout(function() {
+      button7.disabled = false;
+    }, 10000); 
+        p7.style.display = 'block';
+        m7.play();
+        cat7.play();
+        y.style.fontSize = '100px';
+        btn.style.marginTop = '40px';
+        y.style.padding = '34px 68px';
+        cat1.style.marginTop = '40px';
+        n.innerText = 'alaaaaaa 😞';
+      }
+      if (click === 8) {
+  window.location.href = "https://vt.tiktok.com/ZSFFgXCFT/"; 
+}
+
+    });
+    function closePopup() {
+      document.getElementById('popup1').style.display = 'none';
+      document.getElementById('popup2').style.display = 'none';
+      document.getElementById('popup3').style.display = 'none';
+      document.getElementById('popup4').style.display = 'none';
+      document.getElementById('popup5').style.display = 'none';
+      document.getElementById('popup6').style.display = 'none';
+      document.getElementById('popup7').style.display = 'none';
+      cat1.pause();
+      cat2.pause();
+      cat3.pause();
+      cat4.pause();
+      cat5.pause();
+      cat6.pause();
+      cat7.pause();
+      m1.pause();
+      m2.pause();
+      m3.pause();
+      m4.pause();
+      m5.pause();
+      m6.pause();
+      m7.pause();
+    }
+  </script>
+  <script>
+    enableButton();
+  </script>
+</body>
+
+</html>
