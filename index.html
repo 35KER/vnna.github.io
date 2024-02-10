@@ -3,7 +3,7 @@
 <head>
   <title>VnNa</title>
   <style>
-/* Common styles for all screen sizes */
+   /* Common styles for all screen sizes */
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +16,12 @@ body {
 h1 {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px
 }
 
 h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px
 }
 
 .pic1 {
@@ -35,27 +37,26 @@ h3 {
   margin: 0 auto; /* Center the image */
 }
 
-.yes {
-  background-color: #568564;
-  color: #ffffff;
-  padding: 10px 20px; /* Increase padding for better touchability */
-  margin: 10px auto; /* Center the button */
-  display: block;
-  text-align: center; /* Center the text */
-  border-radius: 5px;
-  font-size: 24px; /* Increase font size for better readability */
-}
+   .yes {
+      background-color: #568564;
+      color: #ffffff;
+      padding: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 20px;
+      border-radius: 5px;
+      font-size: 30px;
+    }
 
-.no {
-  background-color: #f72464;
-  color: #ffffff;
-  padding: 10px 20px; /* Increase padding for better touchability */
-  margin: 10px auto; /* Center the button */
-  display: block;
-  text-align: center; /* Center the text */
-  border-radius: 5px;
-  font-size: 24px; /* Increase font size for better readability */
-}
+    .no {
+      background-color: #f72464;
+      padding: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+      border-radius: 5px;
+      font-size: 30px
+    }
 
 .yes:hover {
   background-color: #ffffff;
@@ -109,8 +110,12 @@ p {
   font-family: comic sans ms;
   text-align: center;
   justify-content: center;
+  font-size: 20px
 }
 
+.content{
+	margin-top:  300px
+	}
 /* Media query for screens smaller than 600px (typical smartphones) */
 @media screen and (max-width: 600px) {
   .yes, .no {
@@ -122,6 +127,7 @@ p {
 </head>
 
 <body>
+	<div class="content">
   <h1>Anyeong Nanaw</h1>
   <img />
   <center>
@@ -134,13 +140,14 @@ p {
     </div><br>
     <p id="tip">Klo dh jwb blh jk cht klo mo tpi chtlh bh...ndbae🤗</p>
   </center>
+  </div>
   
   <div id="popup1" class="popup">
     <center>
       <video id="cat1" loop>
         <source src="cat1.mp4" type="video/mp4" />
       </video>
-      <audio id="m1" src="m1.mp3" muted loop></audio>
+      <audio id="m1" src="m1.MP3" muted loop></audio>
       <p>bkn sd vnna2k19 blg tpi vnna2k24...cehhh</p>
       <p>: klo [X] kelabu x blh tkn ohhh tunggu merah hihihihihi</p>
       <button id='close1' class="close" onclick="closePopup()" disabled>X</button>
@@ -152,7 +159,7 @@ p {
     <video id="cat2" loop>
       <source src="cat2.mp4" type="video/mp4" />
     </video>
-    <audio id="m2" src="m2.mp3" loop></audio>
+    <audio id="m2" src="m2.MP3" loop></audio>
       <p>btw sa bkn lupa birthday mu ohh...ad sa send kat stts tpi xtw klo ko nmpk...gitulh...mnatwlhkn...tpi sa wish lek lh berpun sebln sd...Happy Birthday Oiii, semoga berjaya d msa dpn n bahagia sellu 🥰
       </p>
       <button id='close2' class="close" onclick="closePopup()" disabled>X</button>
@@ -164,7 +171,7 @@ p {
     <video id="cat3" loop>
       <source src="cat3.mp4" type="video/mp4" />
     </video>
-    <audio id="m3" src="m3.mp3" loop></audio>
+    <audio id="m3" src="m3.MP3" loop></audio>
       <p>maaflh...sa nk cht ko, oc bagai tpi besalh sa x berani...adalh takut gitu
       </p>
       <button id='close3' class="close" onclick="closePopup()" disabled>X</button>
@@ -175,7 +182,7 @@ p {
     <video id="cat4" muted loop>
       <source src="cat4.mp4" type="video/mp4" />
     </video>
-    <audio id="m4" src="m4.mp3" loop></audio>
+    <audio id="m4" src="m4.MP3" loop></audio>
       <p>sa x mo kaco ko jk...tpi smpe bila knn sa mo tipu diri sendiri 
       </p>
       <button id='close4' class="close" onclick="closePopup()" disabled>X</button>
@@ -187,7 +194,7 @@ p {
     <video id="cat5" muted loop>
       <source src="cat5.mp4" type="video/mp4" />
     </video>
-    <audio id="m5" src="m5.mp3" loop></audio>
+    <audio id="m5" src="m5.MP3" loop></audio>
       <p>hati ni msi mo ko...ttp tunggu ko gitulh ges
       </p>
       <button id='close5' class="close" onclick="closePopup()" disabled>X</button>
@@ -199,7 +206,7 @@ p {
     <video id="cat6" muted loop>
       <source src="cat6.mp4" type="video/mp4" />
     </video>
-    <audio id="m6" src="m6.mp3" loop></audio>
+    <audio id="m6" src="m6.MP3" loop></audio>
       <p>sa tw yg sa ni...x sweet, x pandai jaga ati ko, x aware gitu lgipun kita x byk saat bahagia bersma org blg
       </p>
       <button id='close6' class="close" onclick="closePopup()" disabled>X</button>
@@ -211,7 +218,7 @@ p {
     <video id="cat7" muted loop>
       <source src="cat7.mp4" type="video/mp4" />
     </video>
-    <audio id="m7" src="m7.mp3" loop></audio>
+    <audio id="m7" src="m7.MP3" loop></audio>
       <p>tpi ni cara sa nk tunjukk...
       </p>
       <button id='close7' class="close" onclick="closePopup()" disabled>X</button>
@@ -276,7 +283,7 @@ p {
       if (click === 2) {
         setTimeout(function() {
       button2.disabled = false;
-    }, 20000); 
+    }, 10000); 
         p2.style.display = 'block';
         m2.play();
         y.style.fontSize = '50px';
@@ -287,7 +294,7 @@ p {
       } else if (click === 3) {
         setTimeout(function() {
       button3.disabled = false;
-    }, 30000); 
+    }, 10000); 
         p3.style.display = 'block';
         m3.play();
         cat3.play();
@@ -299,7 +306,7 @@ p {
       } else if (click === 4) {
         setTimeout(function() {
       button4.disabled = false;
-    }, 25000); 
+    }, 10000); 
         p4.style.display = 'block';
         m4.play();
         cat4.play();
@@ -311,7 +318,7 @@ p {
       } else if (click === 5) {
         setTimeout(function() {
       button5.disabled = false;
-    }, 20000); 
+    }, 10000); 
         p5.style.display = 'block';
         m5.play();
         cat5.play();
@@ -323,7 +330,7 @@ p {
       } else if (click === 6) {
         setTimeout(function() {
       button6.disabled = false;
-    }, 20000); 
+    }, 10000); 
         p6.style.display = 'block';
         m6.play();
         cat6.play();
