@@ -43,7 +43,6 @@ h3 {
       padding: 7px;
       padding-left: 10px;
       padding-right: 10px;
-      margin-right: 20px;
       border-radius: 5px;
       font-size: 30px;
     }
@@ -53,8 +52,8 @@ h3 {
       padding: 7px;
       padding-left: 10px;
       padding-right: 10px;
-      margin-left: 20px;
       border-radius: 5px;
+      margin-top: 20px;
       font-size: 30px
     }
 
@@ -70,15 +69,18 @@ h3 {
 }
 
 .btn {
-  text-align: center; /* Center the buttons */
+  text-align: center; /* Center the content horizontally */
   margin-top: 20px; /* Increase top margin for spacing */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
 }
 
 .popup {
   display: none;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   background-color: #FFF3A7;
   border: 1px solid black;
@@ -88,8 +90,8 @@ h3 {
 }
 
 .close {
-  width: 50px;
   height: 50px;
+  width: 50px;
   cursor: pointer;
   background-color: #fe7779;
   color: black;
@@ -98,10 +100,10 @@ h3 {
 }
 
 .close:disabled {
-width: 50px;
-  height: 50px;
   background-color: #ffffff;
   cursor: not-allowed;
+    height: 50px;
+  width: 50px
 }
 
 .close:hover {
@@ -153,7 +155,6 @@ p {
       <audio id="m1" src="m1.mp3" muted loop></audio>
       <p>bkn sd vnna2k19 blg tpi vnna2k24...cehhh</p>
       <p>: klo [X] kelabu x blh tkn ohhh tunggu merah hihihihihi</p>
-	    <p>dgrlh lagu sbb tu isi hati sa...cehhh</p>
       <button id='close1' class="close" onclick="closePopup()" disabled>X</button>
     </center>
   </div>
@@ -275,11 +276,12 @@ p {
       if (click === 1) {
         setTimeout(function() {
       button1.disabled = false;
-    }, 5000); 
+    }, 3000); 
         m1.play();
         p1.style.display = 'block';
         y.style.fontSize = '40px';
         btn.style.marginTop = '10px';
+        y.style.padding = '30px 48px';
         cat1.play();
         n.innerText = 'mo lh 😣';
         t.style.display = 'none';
@@ -287,72 +289,72 @@ p {
       if (click === 2) {
         setTimeout(function() {
       button2.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p2.style.display = 'block';
         m2.play();
         y.style.fontSize = '50px';
         btn.style.marginTop = '15px';
-        y.style.padding = '14px 28px';
+        y.style.padding = '46px 104px';
         cat2.play();
         n.innerText = 'bersma kembali 🤗';
       } else if (click === 3) {
         setTimeout(function() {
       button3.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p3.style.display = 'block';
         m3.play();
         cat3.play();
         y.style.fontSize = '60px';
         btn.style.marginTop = '20px';
-        y.style.padding = '18px 36px';
+        y.style.padding = '54px 160px';
         cat1.style.marginTop = '20px';
         n.innerText = 'cm dlu ❤️';
       } else if (click === 4) {
         setTimeout(function() {
       button4.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p4.style.display = 'block';
         m4.play();
         cat4.play();
         y.style.fontSize = '70px';
         btn.style.marginTop = '25px';
-        y.style.padding = '22px 44px';
+        y.style.padding = '62px 216px';
         cat1.style.marginTop = '25px';
         n.innerText = 'ya blg 🥰';
       } else if (click === 5) {
         setTimeout(function() {
       button5.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p5.style.display = 'block';
         m5.play();
         cat5.play();
         y.style.fontSize = '80px';
         btn.style.marginTop = '30px';
-        y.style.padding = '26px 52px';
+        y.style.padding = '70px 260px';
         cat1.style.marginTop = '30px';
         n.innerText = ' bagi peluang 🥹';
       } else if (click === 6) {
         setTimeout(function() {
       button6.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p6.style.display = 'block';
         m6.play();
         cat6.play();
         y.style.fontSize = '90px';
         btn.style.marginTop = '35px';
-        y.style.padding = '30px 60px';
+        y.style.padding = '76px 312px';
         cat1.style.marginTop = '35px';
         n.innerText = 'tuk buktikan 🥺';
       } else if (click === 7) {
         setTimeout(function() {
       button7.disabled = false;
-    }, 5000); 
+    }, 3000); 
         p7.style.display = 'block';
         m7.play();
         cat7.play();
         y.style.fontSize = '100px';
         btn.style.marginTop = '40px';
-        y.style.padding = '34px 68px';
+        y.style.padding = '84px 360px';
         cat1.style.marginTop = '40px';
         n.innerText = 'alaaaaaa 😞';
       }
