@@ -24,32 +24,37 @@ h3 {
 
 .pic1 {
   width: 200px;
+  margin: 0 auto; /* Center the image */
 }
 
 .pic2 {
   width: 70px;
   padding-bottom: 20px;
   padding-top: 20px;
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
 
 .yes {
   background-color: #568564;
   color: #ffffff;
-  padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 20px;
+  padding: 10px 20px; /* Increase padding for better touchability */
+  margin: 10px auto; /* Center the button */
+  display: block;
+  text-align: center; /* Center the text */
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 24px; /* Increase font size for better readability */
 }
 
 .no {
   background-color: #f72464;
-  padding: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 20px;
+  color: #ffffff;
+  padding: 10px 20px; /* Increase padding for better touchability */
+  margin: 10px auto; /* Center the button */
+  display: block;
+  text-align: center; /* Center the text */
   border-radius: 5px;
+  font-size: 24px; /* Increase font size for better readability */
 }
 
 .yes:hover {
@@ -60,13 +65,12 @@ h3 {
 
 .no:hover {
   background-color: #47201b;
-  color: #ffffff;
   cursor: pointer;
 }
 
 .btn {
   text-align: center; /* Center the buttons */
-  margin-top: 10px;
+  margin-top: 20px; /* Increase top margin for spacing */
 }
 
 .popup {
@@ -94,10 +98,10 @@ h3 {
 
 .close:disabled {
   background-color: #ffffff;
-  cursor: not-allowed
+  cursor: not-allowed;
 }
 
-.close:hover{
+.close:hover {
   background-color: #568564;
 }
 
@@ -110,7 +114,7 @@ p {
 /* Media query for screens smaller than 600px (typical smartphones) */
 @media screen and (max-width: 600px) {
   .yes, .no {
-    font-size: 14px; /* Decrease font size for smaller screens */
+    font-size: 18px; /* Further decrease font size for smaller screens */
   }
 }
 
