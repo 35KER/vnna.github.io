@@ -3,133 +3,97 @@
 <head>
   <title>VnNa</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
+/* Common styles for all screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      background: #ffccbf;
-    }
+body {
+  background: #ffccbf;
+}
 
-    h1 {
-      text-align: center;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-    h3 {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    .pic1 {
-      width: 200px;
-    }
+.pic1 {
+  width: 200px;
+}
 
-    .pic2 {
-      width: 70px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-    }
+.pic2 {
+  width: 70px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
-    .yes {
-      background-color: #568564;
-      color: #ffffff;
-      padding: 7px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-right: 20px;
-      border-radius: 5px;
-      font-size: 20px;
-      position: relative
-    }
+.yes, .no {
+  display: block; /* Ensures buttons stack on top of each other on mobile */
+  width: 80%; /* Makes buttons fill most of the width of their container */
+  margin: 10px auto; /* Centers the buttons horizontally and adds space between them */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size for better readability on mobile */
+}
 
-    .no {
-      background-color: #f72464;
-      padding: 7px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-left: 20px;
-      border-radius: 5px;
-      position: relative
-    }
+.yes:hover, .no:hover {
+  cursor: pointer;
+}
 
-    .yes:hover {
-      background-color: #ffffff;
-      color: #47201b;
-      cursor: pointer;
-    }
+.btn {
+  text-align: center; /* Centers the buttons */
+  margin-top: 10px;
+}
 
-    .no:hover {
-      background-color: #47201b;
-      color: #ffffff;
-      cursor: pointer;
-    }
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF3A7;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 1000;
+}
 
-    video {
-      height: 200px;
-      width: auto;
-    }
+.close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #fe7779;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 
-    .btn {
-      margin-top: 10px;
-    }
+.close:disabled {
+  background-color: #ffffff;
+  cursor: not-allowed
+}
 
-    /* Styles for the button */
-    .button {
-      background-color: #568564;
-      color: #ffffff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.close:hover{
+  background-color: #568564;
+}
 
-    /* Popup window styles */
-    .popup {
-      display: none;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #FFF3A7;
-      border: 1px solid black;
-      border-radius: 15px;
-      padding: 20px;
-      z-index: 1000;
-    }
+p {
+  font-family: comic sans ms;
+  text-align: center;
+  justify-content: center;
+}
 
-    /* Close button styles */
-    .close {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      background-color: #fe7779;
-      color: black;
-      border: 1px solid black;
-      border-radius: 5px;
-    }
-    .close:disabled {
-      background-color: #ffffff;
-      cursor: not-allowed
-    }
-    .close:hover{
-      background-color: #568564;
-    }
-    /* Video styles */
-    p {
-      font-family: comic sans ms;
-      text-align: center;
-      justify-content: center;
-    }
-@media only screen and (max-width: 600px) {
-  .btn {
-    display: flex;
-    flex-direction: column;
-  }
+/* Media query for screens smaller than 600px (typical smartphones) */
+@media screen and (max-width: 600px) {
   .yes, .no {
-    margin: 5px auto;
+    font-size: 14px; /* Decrease font size for smaller screens */
   }
 }
+
   </style>
 </head>
 
